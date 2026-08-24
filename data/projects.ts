@@ -1959,4 +1959,5 @@ export const projects: Project[] = [
   lastUpdated: '2026-08-20',
   suitorFor: ['BTech', 'MCA', 'BCA'],
 }
+
 ];
