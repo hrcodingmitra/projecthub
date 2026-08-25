@@ -1958,6 +1958,85 @@ export const projects: Project[] = [
   relatedProjects: [],
   lastUpdated: '2026-08-20',
   suitorFor: ['BTech', 'MCA', 'BCA'],
+},
+{
+  id: '34',
+  slug: 'policypal-ai',
+  title: 'PolicyPal – Policy & Rule Explanation Assistant',
+  shortDescription: 'AI assistant that explains college, hostel, scholarship, HR, and organizational policies using uploaded documents.',
+  fullDescription: 'PolicyPal is a document-grounded assistant. Administrators upload policy documents, while users ask natural-language questions. AI answers from the selected policy and shows relevant source sections for verification.',
+  thumbnail: '/policypal/thumbnail.png',
+  gallery: ['/policypal/1.png', '/policypal/2.png', '/policypal/3.png', '/policypal/4.png'],
+  category: 'ai-ml',
+  technologies: [{ name: 'React', category: 'frontend' }, { name: 'Node.js', category: 'backend' }, { name: 'Express', category: 'backend' }, { name: 'MongoDB', category: 'database' }, { name: 'Gemini API', category: 'tool' }],
+  projectType: 'major',
+  difficulty: 'intermediate',
+  tags: ['mern', 'ai'],
+  features: [{ title: 'AI-Powered Analysis', description: 'Use Gemini to analyze, extract, classify, summarize, match, or generate structured information.' }, { title: 'Search & Filtering', description: 'Find relevant records quickly using search and filters.' }, { title: 'Status Tracking', description: 'Track progress, pending work, completion, or approval states.' }, { title: 'History & Records', description: 'Maintain previous activities and results.' }, { title: 'Responsive Interface', description: 'Provide a mobile-friendly interface for common workflows.' }],
+  modules: [{ name: 'User Module', description: 'Authentication and profile management', features: ['Registration', 'Login', 'Profile Management'] }, { name: 'Core Module', description: 'Main PolicyPal workflow', features: ['Create', 'View', 'Edit', 'Status Tracking'] }, { name: 'AI Module', description: 'Gemini-powered AI functionality', features: ['Analyze', 'Generate Structured Output', 'Review Results', 'Save Results'] }, { name: 'History Module', description: 'Previous records and activity', features: ['History', 'Search', 'Details'] }],
+  problemStatement: 'The project addresses a specific real-world problem: ai assistant that explains college, hostel, scholarship, hr, and organizational policies using uploaded documents.',
+  existingSolutions: [],
+  workflow: 'User signup → Create or select a record → Perform the main action → Review/update status → Track history',
+  architecture: { description: 'MERN stack with REST APIs and Gemini API integration for AI features.' },
+  databaseTables: [
+    { name: 'users', description: 'User accounts and roles', fields: ['id', 'name', 'email', 'password', 'role'] },
+    { name: 'primary_records', description: 'Main project records', fields: ['id', 'userId', 'title', 'description', 'status', 'createdAt'] },
+    { name: 'history', description: 'Activity and status history', fields: ['id', 'recordId', 'action', 'notes', 'createdAt'] }
+  ],
+  documentation: [{ title: 'Setup Guide', type: 'md', url: '#' }, { title: 'API Documentation', type: 'md', url: '#' }],
+  requirements: { software: ['Node.js 18+', 'npm', 'Git'], database: ['MongoDB'], ide: ['VS Code'], ram: '8GB', os: ['Windows', 'macOS', 'Linux'] },
+  learningOutcomes: [
+    { title: 'MERN Stack', description: 'Full-stack JavaScript application development' },
+    { title: 'AI Integration', description: 'Practical Gemini API integration' },
+    { title: 'Database Design', description: 'Application data modeling and CRUD workflows' }
+  ],
+  futureEnhancements: ['Notifications', 'Advanced search and filtering', 'Mobile PWA', 'Analytics and reporting'],
+  faqs: [
+    { question: 'Is this suitable as a college major project?', answer: 'Yes. It has a clear real-world problem, multiple modules, database workflows, and a practical implementation scope.' },
+    { question: 'Can the AI features use a free API?', answer: 'Yes. Gemini can be used for the AI layer subject to the current free-tier quota and model limits.' }
+  ],
+  relatedProjects: [],
+  lastUpdated: '2026-08-20',
+  suitorFor: ['BTech', 'MCA', 'BCA'],
+},
+{
+  id: '35',
+  slug: 'noticeboard-ai',
+  title: 'NoticeBoard AI – Smart Notice Understanding Platform',
+  shortDescription: 'AI platform that converts lengthy college notices into concise, actionable information.',
+  fullDescription: 'NoticeBoard AI helps students understand college notices by extracting who the notice applies to, required actions, deadlines, required documents, and where the action should be completed.',
+  thumbnail: '/noticeboard/thumbnail.png',
+  gallery: ['/noticeboard/1.png', '/noticeboard/2.png', '/noticeboard/3.png', '/noticeboard/4.png'],
+  category: 'ai-ml',
+  technologies: [{ name: 'React', category: 'frontend' }, { name: 'Node.js', category: 'backend' }, { name: 'Express', category: 'backend' }, { name: 'MongoDB', category: 'database' }, { name: 'Gemini API', category: 'tool' }],
+  projectType: 'major',
+  difficulty: 'intermediate',
+  tags: ['mern', 'ai'],
+  features: [{ title: 'AI-Powered Analysis', description: 'Use Gemini to analyze, extract, classify, summarize, match, or generate structured information.' }, { title: 'Search & Filtering', description: 'Find relevant records quickly using search and filters.' }, { title: 'Status Tracking', description: 'Track progress, pending work, completion, or approval states.' }, { title: 'History & Records', description: 'Maintain previous activities and results.' }, { title: 'Responsive Interface', description: 'Provide a mobile-friendly interface for common workflows.' }],
+  modules: [{ name: 'User Module', description: 'Authentication and profile management', features: ['Registration', 'Login', 'Profile Management'] }, { name: 'Core Module', description: 'Main NoticeBoard AI workflow', features: ['Create', 'View', 'Edit', 'Status Tracking'] }, { name: 'AI Module', description: 'Gemini-powered AI functionality', features: ['Analyze', 'Generate Structured Output', 'Review Results', 'Save Results'] }, { name: 'History Module', description: 'Previous records and activity', features: ['History', 'Search', 'Details'] }],
+  problemStatement: 'The project addresses a specific real-world problem: ai platform that converts lengthy college notices into concise, actionable information.',
+  existingSolutions: [],
+  workflow: 'User signup → Create or select a record → Perform the main action → Review/update status → Track history',
+  architecture: { description: 'MERN stack with REST APIs and Gemini API integration for AI features.' },
+  databaseTables: [
+    { name: 'users', description: 'User accounts and roles', fields: ['id', 'name', 'email', 'password', 'role'] },
+    { name: 'primary_records', description: 'Main project records', fields: ['id', 'userId', 'title', 'description', 'status', 'createdAt'] },
+    { name: 'history', description: 'Activity and status history', fields: ['id', 'recordId', 'action', 'notes', 'createdAt'] }
+  ],
+  documentation: [{ title: 'Setup Guide', type: 'md', url: '#' }, { title: 'API Documentation', type: 'md', url: '#' }],
+  requirements: { software: ['Node.js 18+', 'npm', 'Git'], database: ['MongoDB'], ide: ['VS Code'], ram: '8GB', os: ['Windows', 'macOS', 'Linux'] },
+  learningOutcomes: [
+    { title: 'MERN Stack', description: 'Full-stack JavaScript application development' },
+    { title: 'AI Integration', description: 'Practical Gemini API integration' },
+    { title: 'Database Design', description: 'Application data modeling and CRUD workflows' }
+  ],
+  futureEnhancements: ['Notifications', 'Advanced search and filtering', 'Mobile PWA', 'Analytics and reporting'],
+  faqs: [
+    { question: 'Is this suitable as a college major project?', answer: 'Yes. It has a clear real-world problem, multiple modules, database workflows, and a practical implementation scope.' },
+    { question: 'Can the AI features use a free API?', answer: 'Yes. Gemini can be used for the AI layer subject to the current free-tier quota and model limits.' }
+  ],
+  relatedProjects: [],
+  lastUpdated: '2026-08-20',
+  suitorFor: ['BTech', 'MCA', 'BCA'],
 }
-
 ];
