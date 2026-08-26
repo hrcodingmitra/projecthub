@@ -2038,5 +2038,85 @@ export const projects: Project[] = [
   relatedProjects: [],
   lastUpdated: '2026-08-20',
   suitorFor: ['BTech', 'MCA', 'BCA'],
+},
+{
+  id: '36',
+  slug: 'billwise',
+  title: 'BillWise – Household Bill & Subscription Tracker',
+  shortDescription: 'Personal utility for tracking recurring household bills, subscriptions, due dates, payments, and reminders.',
+  fullDescription: 'BillWise manages recurring obligations such as electricity, internet, mobile bills, insurance, memberships, and digital subscriptions. Users create recurring bills, track due dates and payment history, and receive reminders.',
+  thumbnail: '/billwise/thumbnail.png',
+  gallery: ['/billwise/1.png', '/billwise/2.png', '/billwise/3.png', '/billwise/4.png'],
+  category: 'web',
+  technologies: [{ name: 'React', category: 'frontend' }, { name: 'Node.js', category: 'backend' }, { name: 'Express', category: 'backend' }, { name: 'MongoDB', category: 'database' }],
+  projectType: 'major',
+  difficulty: 'intermediate',
+  tags: ['mern'],
+  features: [{ title: 'Core Workflow', description: 'Use the main project workflow and complete the core problem-solving action.' }, { title: 'Search & Filtering', description: 'Find relevant records quickly using search and filters.' }, { title: 'Status Tracking', description: 'Track progress, pending work, completion, or approval states.' }, { title: 'History & Records', description: 'Maintain previous activities and results.' }, { title: 'Responsive Interface', description: 'Provide a mobile-friendly interface for common workflows.' }],
+  modules: [{ name: 'User Module', description: 'Authentication and profile management', features: ['Registration', 'Login', 'Profile Management'] }, { name: 'Core Module', description: 'Main BillWise workflow', features: ['Create', 'View', 'Edit', 'Status Tracking'] }, { name: 'History Module', description: 'Previous records and activity', features: ['History', 'Search', 'Details'] }],
+  problemStatement: 'The project addresses a specific real-world problem: personal utility for tracking recurring household bills, subscriptions, due dates, payments, and reminders.',
+  existingSolutions: [],
+  workflow: 'User signup → Create or select a record → Perform the main action → Review/update status → Track history',
+  architecture: { description: 'MERN stack with REST APIs.' },
+  databaseTables: [
+    { name: 'users', description: 'User accounts and roles', fields: ['id', 'name', 'email', 'password', 'role'] },
+    { name: 'primary_records', description: 'Main project records', fields: ['id', 'userId', 'title', 'description', 'status', 'createdAt'] },
+    { name: 'history', description: 'Activity and status history', fields: ['id', 'recordId', 'action', 'notes', 'createdAt'] }
+  ],
+  documentation: [{ title: 'Setup Guide', type: 'md', url: '#' }, { title: 'API Documentation', type: 'md', url: '#' }],
+  requirements: { software: ['Node.js 18+', 'npm', 'Git'], database: ['MongoDB'], ide: ['VS Code'], ram: '8GB', os: ['Windows', 'macOS', 'Linux'] },
+  learningOutcomes: [
+    { title: 'MERN Stack', description: 'Full-stack JavaScript application development' },
+    { title: 'Backend Workflows', description: 'REST APIs, authentication, validation, and business rules' },
+    { title: 'Database Design', description: 'Application data modeling and CRUD workflows' }
+  ],
+  futureEnhancements: ['Notifications', 'Advanced search and filtering', 'Mobile PWA', 'Analytics and reporting'],
+  faqs: [
+    { question: 'Is this suitable as a college major project?', answer: 'Yes. It has a clear real-world problem, multiple modules, database workflows, and a practical implementation scope.' },
+    { question: 'Can this be built without paid APIs?', answer: 'Yes. The core application can be implemented with open-source MERN technologies and self-built functionality.' }
+  ],
+  relatedProjects: [],
+  lastUpdated: '2026-08-20',
+  suitorFor: ['BTech', 'MCA', 'BCA'],
+},
+{
+  id: '37',
+  slug: 'expirywatch',
+  title: 'ExpiryWatch – Expiry & Renewal Reminder Platform',
+  shortDescription: 'Simple platform for tracking documents, memberships, certificates, contracts, and other items with expiry dates.',
+  fullDescription: 'ExpiryWatch tracks anything that expires or requires renewal, including passports, licences, insurance, certifications, memberships, and contracts. Items are categorized as active, expiring soon, or expired.',
+  thumbnail: '/expirywatch/thumbnail.png',
+  gallery: ['/expirywatch/1.png', '/expirywatch/2.png', '/expirywatch/3.png', '/expirywatch/4.png'],
+  category: 'web',
+  technologies: [{ name: 'React', category: 'frontend' }, { name: 'Node.js', category: 'backend' }, { name: 'Express', category: 'backend' }, { name: 'MongoDB', category: 'database' }],
+  projectType: 'major',
+  difficulty: 'intermediate',
+  tags: ['mern'],
+  features: [{ title: 'Core Workflow', description: 'Use the main project workflow and complete the core problem-solving action.' }, { title: 'Search & Filtering', description: 'Find relevant records quickly using search and filters.' }, { title: 'Status Tracking', description: 'Track progress, pending work, completion, or approval states.' }, { title: 'History & Records', description: 'Maintain previous activities and results.' }, { title: 'Responsive Interface', description: 'Provide a mobile-friendly interface for common workflows.' }],
+  modules: [{ name: 'User Module', description: 'Authentication and profile management', features: ['Registration', 'Login', 'Profile Management'] }, { name: 'Core Module', description: 'Main ExpiryWatch workflow', features: ['Create', 'View', 'Edit', 'Status Tracking'] }, { name: 'History Module', description: 'Previous records and activity', features: ['History', 'Search', 'Details'] }],
+  problemStatement: 'The project addresses a specific real-world problem: simple platform for tracking documents, memberships, certificates, contracts, and other items with expiry dates.',
+  existingSolutions: [],
+  workflow: 'User signup → Create or select a record → Perform the main action → Review/update status → Track history',
+  architecture: { description: 'MERN stack with REST APIs.' },
+  databaseTables: [
+    { name: 'users', description: 'User accounts and roles', fields: ['id', 'name', 'email', 'password', 'role'] },
+    { name: 'primary_records', description: 'Main project records', fields: ['id', 'userId', 'title', 'description', 'status', 'createdAt'] },
+    { name: 'history', description: 'Activity and status history', fields: ['id', 'recordId', 'action', 'notes', 'createdAt'] }
+  ],
+  documentation: [{ title: 'Setup Guide', type: 'md', url: '#' }, { title: 'API Documentation', type: 'md', url: '#' }],
+  requirements: { software: ['Node.js 18+', 'npm', 'Git'], database: ['MongoDB'], ide: ['VS Code'], ram: '8GB', os: ['Windows', 'macOS', 'Linux'] },
+  learningOutcomes: [
+    { title: 'MERN Stack', description: 'Full-stack JavaScript application development' },
+    { title: 'Backend Workflows', description: 'REST APIs, authentication, validation, and business rules' },
+    { title: 'Database Design', description: 'Application data modeling and CRUD workflows' }
+  ],
+  futureEnhancements: ['Notifications', 'Advanced search and filtering', 'Mobile PWA', 'Analytics and reporting'],
+  faqs: [
+    { question: 'Is this suitable as a college major project?', answer: 'Yes. It has a clear real-world problem, multiple modules, database workflows, and a practical implementation scope.' },
+    { question: 'Can this be built without paid APIs?', answer: 'Yes. The core application can be implemented with open-source MERN technologies and self-built functionality.' }
+  ],
+  relatedProjects: [],
+  lastUpdated: '2026-08-20',
+  suitorFor: ['BTech', 'MCA', 'BCA'],
 }
 ];
