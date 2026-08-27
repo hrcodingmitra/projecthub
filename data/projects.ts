@@ -2118,5 +2118,85 @@ export const projects: Project[] = [
   relatedProjects: [],
   lastUpdated: '2026-08-20',
   suitorFor: ['BTech', 'MCA', 'BCA'],
+},
+{
+  id: '38',
+  slug: 'borrowbox',
+  title: 'BorrowBox – Community Item Lending Platform',
+  shortDescription: 'Peer-to-peer platform for listing, borrowing, approving, returning, and rating shared physical items.',
+  fullDescription: 'BorrowBox lets people share items they own instead of purchasing them for occasional use. Users list tools, cameras, projectors, camping equipment, and other items, define availability, approve requests, and track returns.',
+  thumbnail: '/borrowbox/thumbnail.png',
+  gallery: ['/borrowbox/1.png', '/borrowbox/2.png', '/borrowbox/3.png', '/borrowbox/4.png'],
+  category: 'web',
+  technologies: [{ name: 'React', category: 'frontend' }, { name: 'Node.js', category: 'backend' }, { name: 'Express', category: 'backend' }, { name: 'MongoDB', category: 'database' }],
+  projectType: 'major',
+  difficulty: 'intermediate',
+  tags: ['mern'],
+  features: [{ title: 'Core Workflow', description: 'Use the main project workflow and complete the core problem-solving action.' }, { title: 'Search & Filtering', description: 'Find relevant records quickly using search and filters.' }, { title: 'Status Tracking', description: 'Track progress, pending work, completion, or approval states.' }, { title: 'History & Records', description: 'Maintain previous activities and results.' }, { title: 'Responsive Interface', description: 'Provide a mobile-friendly interface for common workflows.' }],
+  modules: [{ name: 'User Module', description: 'Authentication and profile management', features: ['Registration', 'Login', 'Profile Management'] }, { name: 'Core Module', description: 'Main BorrowBox workflow', features: ['Create', 'View', 'Edit', 'Status Tracking'] }, { name: 'History Module', description: 'Previous records and activity', features: ['History', 'Search', 'Details'] }],
+  problemStatement: 'The project addresses a specific real-world problem: peer-to-peer platform for listing, borrowing, approving, returning, and rating shared physical items.',
+  existingSolutions: [],
+  workflow: 'User signup → Create or select a record → Perform the main action → Review/update status → Track history',
+  architecture: { description: 'MERN stack with REST APIs.' },
+  databaseTables: [
+    { name: 'users', description: 'User accounts and roles', fields: ['id', 'name', 'email', 'password', 'role'] },
+    { name: 'primary_records', description: 'Main project records', fields: ['id', 'userId', 'title', 'description', 'status', 'createdAt'] },
+    { name: 'history', description: 'Activity and status history', fields: ['id', 'recordId', 'action', 'notes', 'createdAt'] }
+  ],
+  documentation: [{ title: 'Setup Guide', type: 'md', url: '#' }, { title: 'API Documentation', type: 'md', url: '#' }],
+  requirements: { software: ['Node.js 18+', 'npm', 'Git'], database: ['MongoDB'], ide: ['VS Code'], ram: '8GB', os: ['Windows', 'macOS', 'Linux'] },
+  learningOutcomes: [
+    { title: 'MERN Stack', description: 'Full-stack JavaScript application development' },
+    { title: 'Backend Workflows', description: 'REST APIs, authentication, validation, and business rules' },
+    { title: 'Database Design', description: 'Application data modeling and CRUD workflows' }
+  ],
+  futureEnhancements: ['Notifications', 'Advanced search and filtering', 'Mobile PWA', 'Analytics and reporting'],
+  faqs: [
+    { question: 'Is this suitable as a college major project?', answer: 'Yes. It has a clear real-world problem, multiple modules, database workflows, and a practical implementation scope.' },
+    { question: 'Can this be built without paid APIs?', answer: 'Yes. The core application can be implemented with open-source MERN technologies and self-built functionality.' }
+  ],
+  relatedProjects: [],
+  lastUpdated: '2026-08-20',
+  suitorFor: ['BTech', 'MCA', 'BCA'],
+},
+{
+  id: '39',
+  slug: 'timebank',
+  title: 'TimeBank – Community Time Exchange Platform',
+  shortDescription: 'Community platform where users exchange skills and services using time credits instead of money.',
+  fullDescription: 'TimeBank is a peer-to-peer skill exchange platform based on time credits. Users offer services such as tutoring or design help, earn credits based on time spent, and spend those credits requesting help from others.',
+  thumbnail: '/timebank/thumbnail.png',
+  gallery: ['/timebank/1.png', '/timebank/2.png', '/timebank/3.png', '/timebank/4.png'],
+  category: 'web',
+  technologies: [{ name: 'React', category: 'frontend' }, { name: 'Node.js', category: 'backend' }, { name: 'Express', category: 'backend' }, { name: 'MongoDB', category: 'database' }],
+  projectType: 'major',
+  difficulty: 'intermediate',
+  tags: ['mern'],
+  features: [{ title: 'Core Workflow', description: 'Use the main project workflow and complete the core problem-solving action.' }, { title: 'Search & Filtering', description: 'Find relevant records quickly using search and filters.' }, { title: 'Status Tracking', description: 'Track progress, pending work, completion, or approval states.' }, { title: 'History & Records', description: 'Maintain previous activities and results.' }, { title: 'Responsive Interface', description: 'Provide a mobile-friendly interface for common workflows.' }],
+  modules: [{ name: 'User Module', description: 'Authentication and profile management', features: ['Registration', 'Login', 'Profile Management'] }, { name: 'Core Module', description: 'Main TimeBank workflow', features: ['Create', 'View', 'Edit', 'Status Tracking'] }, { name: 'History Module', description: 'Previous records and activity', features: ['History', 'Search', 'Details'] }],
+  problemStatement: 'The project addresses a specific real-world problem: community platform where users exchange skills and services using time credits instead of money.',
+  existingSolutions: [],
+  workflow: 'User signup → Create or select a record → Perform the main action → Review/update status → Track history',
+  architecture: { description: 'MERN stack with REST APIs.' },
+  databaseTables: [
+    { name: 'users', description: 'User accounts and roles', fields: ['id', 'name', 'email', 'password', 'role'] },
+    { name: 'primary_records', description: 'Main project records', fields: ['id', 'userId', 'title', 'description', 'status', 'createdAt'] },
+    { name: 'history', description: 'Activity and status history', fields: ['id', 'recordId', 'action', 'notes', 'createdAt'] }
+  ],
+  documentation: [{ title: 'Setup Guide', type: 'md', url: '#' }, { title: 'API Documentation', type: 'md', url: '#' }],
+  requirements: { software: ['Node.js 18+', 'npm', 'Git'], database: ['MongoDB'], ide: ['VS Code'], ram: '8GB', os: ['Windows', 'macOS', 'Linux'] },
+  learningOutcomes: [
+    { title: 'MERN Stack', description: 'Full-stack JavaScript application development' },
+    { title: 'Backend Workflows', description: 'REST APIs, authentication, validation, and business rules' },
+    { title: 'Database Design', description: 'Application data modeling and CRUD workflows' }
+  ],
+  futureEnhancements: ['Notifications', 'Advanced search and filtering', 'Mobile PWA', 'Analytics and reporting'],
+  faqs: [
+    { question: 'Is this suitable as a college major project?', answer: 'Yes. It has a clear real-world problem, multiple modules, database workflows, and a practical implementation scope.' },
+    { question: 'Can this be built without paid APIs?', answer: 'Yes. The core application can be implemented with open-source MERN technologies and self-built functionality.' }
+  ],
+  relatedProjects: [],
+  lastUpdated: '2026-08-20',
+  suitorFor: ['BTech', 'MCA', 'BCA'],
 }
 ];
