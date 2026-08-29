@@ -66,7 +66,7 @@ export default function CatalogPage() {
               <div className="mt-8 flex flex-wrap items-center gap-6 text-sm font-medium text-slate-600 dark:text-slate-400">
                 <span className="flex items-center gap-2 rounded-full bg-blue-500/10 px-3 py-1.5 text-blue-700 dark:text-blue-300 border border-blue-500/20">
                   <span className="h-2 w-2 rounded-full bg-blue-600 dark:bg-blue-400" />
-                  30+ Featured Projects
+                  40+ Featured Projects
                 </span>
                 <span className="flex items-center gap-2 rounded-full bg-orange-500/10 px-3 py-1.5 text-orange-700 dark:text-orange-300 border border-orange-500/20">
                   <span className="h-2 w-2 rounded-full bg-orange-600 dark:bg-orange-400" />
