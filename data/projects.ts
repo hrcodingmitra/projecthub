@@ -2278,5 +2278,85 @@ export const projects: Project[] = [
   relatedProjects: [],
   lastUpdated: '2026-08-20',
   suitorFor: ['BTech', 'MCA', 'BCA'],
+},
+{
+  id: '42',
+  slug: 'warrantyvault-ai-mern',
+  title: 'WarrantyVault – Product Warranty & Service Tracker',
+  shortDescription: 'AI-assisted platform for tracking products, warranty periods, invoices, service records, and warranty claims.',
+  fullDescription: 'WarrantyVault maintains digital records of products, purchase dates, models, serial numbers, warranty periods, invoices, and service records. An optional AI invoice extraction feature reads a purchase invoice and suggests product and warranty information for user confirmation.',
+  thumbnail: '/warrantyvault/thumbnail.png',
+  gallery: ['/warrantyvault/1.png', '/warrantyvault/2.png', '/warrantyvault/3.png', '/warrantyvault/4.png'],
+  category: 'ai-ml',
+  technologies: [{ name: 'React', category: 'frontend' }, { name: 'Node.js', category: 'backend' }, { name: 'Express', category: 'backend' }, { name: 'MongoDB', category: 'database' }, { name: 'Gemini API', category: 'tool' }],
+  projectType: 'major',
+  difficulty: 'intermediate',
+  tags: ['mern', 'ai'],
+  features: [{ title: 'AI-Powered Analysis', description: 'Use Gemini to analyze, extract, classify, summarize, match, or generate structured information.' }, { title: 'Search & Filtering', description: 'Find relevant records quickly using search and filters.' }, { title: 'Status Tracking', description: 'Track progress, pending work, completion, or approval states.' }, { title: 'History & Records', description: 'Maintain previous activities and results.' }, { title: 'Responsive Interface', description: 'Provide a mobile-friendly interface for common workflows.' }],
+  modules: [{ name: 'User Module', description: 'Authentication and profile management', features: ['Registration', 'Login', 'Profile Management'] }, { name: 'Core Module', description: 'Main WarrantyVault workflow', features: ['Create', 'View', 'Edit', 'Status Tracking'] }, { name: 'AI Module', description: 'Gemini-powered AI functionality', features: ['Analyze', 'Generate Structured Output', 'Review Results', 'Save Results'] }, { name: 'History Module', description: 'Previous records and activity', features: ['History', 'Search', 'Details'] }],
+  problemStatement: 'The project addresses a specific real-world problem: ai-assisted platform for tracking products, warranty periods, invoices, service records, and warranty claims.',
+  existingSolutions: [],
+  workflow: 'User signup → Create or select a record → Perform the main action → Review/update status → Track history',
+  architecture: { description: 'MERN stack with REST APIs and Gemini API integration for AI features.' },
+  databaseTables: [
+    { name: 'users', description: 'User accounts and roles', fields: ['id', 'name', 'email', 'password', 'role'] },
+    { name: 'primary_records', description: 'Main project records', fields: ['id', 'userId', 'title', 'description', 'status', 'createdAt'] },
+    { name: 'history', description: 'Activity and status history', fields: ['id', 'recordId', 'action', 'notes', 'createdAt'] }
+  ],
+  documentation: [{ title: 'Setup Guide', type: 'md', url: '#' }, { title: 'API Documentation', type: 'md', url: '#' }],
+  requirements: { software: ['Node.js 18+', 'npm', 'Git'], database: ['MongoDB'], ide: ['VS Code'], ram: '8GB', os: ['Windows', 'macOS', 'Linux'] },
+  learningOutcomes: [
+    { title: 'MERN Stack', description: 'Full-stack JavaScript application development' },
+    { title: 'AI Integration', description: 'Practical Gemini API integration' },
+    { title: 'Database Design', description: 'Application data modeling and CRUD workflows' }
+  ],
+  futureEnhancements: ['Notifications', 'Advanced search and filtering', 'Mobile PWA', 'Analytics and reporting'],
+  faqs: [
+    { question: 'Is this suitable as a college major project?', answer: 'Yes. It has a clear real-world problem, multiple modules, database workflows, and a practical implementation scope.' },
+    { question: 'Can the AI features use a free API?', answer: 'Yes. Gemini can be used for the AI layer subject to the current free-tier quota and model limits.' }
+  ],
+  relatedProjects: [],
+  lastUpdated: '2026-08-20',
+  suitorFor: ['BTech', 'MCA', 'BCA'],
+},
+{
+  id: '43',
+  slug: 'homelog-mern',
+  title: 'HomeLog – Household Maintenance History Platform',
+  shortDescription: 'Platform for tracking household assets, maintenance records, repair costs, service schedules, and documents.',
+  fullDescription: 'HomeLog centralizes maintenance history for air conditioners, washing machines, refrigerators, water purifiers, generators, and other household equipment. Users record service dates, problems, parts, costs, technicians, and next maintenance dates.',
+  thumbnail: '/homelog/thumbnail.png',
+  gallery: ['/homelog/1.png', '/homelog/2.png', '/homelog/3.png', '/homelog/4.png'],
+  category: 'web',
+  technologies: [{ name: 'React', category: 'frontend' }, { name: 'Node.js', category: 'backend' }, { name: 'Express', category: 'backend' }, { name: 'MongoDB', category: 'database' }],
+  projectType: 'major',
+  difficulty: 'intermediate',
+  tags: ['mern'],
+  features: [{ title: 'Core Workflow', description: 'Use the main project workflow and complete the core problem-solving action.' }, { title: 'Search & Filtering', description: 'Find relevant records quickly using search and filters.' }, { title: 'Status Tracking', description: 'Track progress, pending work, completion, or approval states.' }, { title: 'History & Records', description: 'Maintain previous activities and results.' }, { title: 'Responsive Interface', description: 'Provide a mobile-friendly interface for common workflows.' }],
+  modules: [{ name: 'User Module', description: 'Authentication and profile management', features: ['Registration', 'Login', 'Profile Management'] }, { name: 'Core Module', description: 'Main HomeLog workflow', features: ['Create', 'View', 'Edit', 'Status Tracking'] }, { name: 'History Module', description: 'Previous records and activity', features: ['History', 'Search', 'Details'] }],
+  problemStatement: 'The project addresses a specific real-world problem: platform for tracking household assets, maintenance records, repair costs, service schedules, and documents.',
+  existingSolutions: [],
+  workflow: 'User signup → Create or select a record → Perform the main action → Review/update status → Track history',
+  architecture: { description: 'MERN stack with REST APIs.' },
+  databaseTables: [
+    { name: 'users', description: 'User accounts and roles', fields: ['id', 'name', 'email', 'password', 'role'] },
+    { name: 'primary_records', description: 'Main project records', fields: ['id', 'userId', 'title', 'description', 'status', 'createdAt'] },
+    { name: 'history', description: 'Activity and status history', fields: ['id', 'recordId', 'action', 'notes', 'createdAt'] }
+  ],
+  documentation: [{ title: 'Setup Guide', type: 'md', url: '#' }, { title: 'API Documentation', type: 'md', url: '#' }],
+  requirements: { software: ['Node.js 18+', 'npm', 'Git'], database: ['MongoDB'], ide: ['VS Code'], ram: '8GB', os: ['Windows', 'macOS', 'Linux'] },
+  learningOutcomes: [
+    { title: 'MERN Stack', description: 'Full-stack JavaScript application development' },
+    { title: 'Backend Workflows', description: 'REST APIs, authentication, validation, and business rules' },
+    { title: 'Database Design', description: 'Application data modeling and CRUD workflows' }
+  ],
+  futureEnhancements: ['Notifications', 'Advanced search and filtering', 'Mobile PWA', 'Analytics and reporting'],
+  faqs: [
+    { question: 'Is this suitable as a college major project?', answer: 'Yes. It has a clear real-world problem, multiple modules, database workflows, and a practical implementation scope.' },
+    { question: 'Can this be built without paid APIs?', answer: 'Yes. The core application can be implemented with open-source MERN technologies and self-built functionality.' }
+  ],
+  relatedProjects: [],
+  lastUpdated: '2026-08-20',
+  suitorFor: ['BTech', 'MCA', 'BCA'],
 }
 ];
