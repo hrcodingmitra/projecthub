@@ -2438,5 +2438,85 @@ export const projects: Project[] = [
     relatedProjects: [],
     lastUpdated: '2026-08-20',
     suitorFor: ['BTech', 'MCA', 'BCA'],
-  }
+  },
+  {
+  id: '46',
+  slug: 'peerdesk',
+  title: 'PeerDesk – Student Peer Support Request Platform',
+  shortDescription: 'Peer-to-peer academic support platform for requesting help, matching helpers, scheduling sessions, and rating experiences.',
+  fullDescription: 'PeerDesk connects students who need help with peers who have relevant knowledge. Students create requests for programming, academic concepts, project guidance, presentation practice, or resume review.',
+  thumbnail: '/peerdesk/thumbnail.png',
+  gallery: ['/peerdesk/1.png', '/peerdesk/2.png', '/peerdesk/3.png', '/peerdesk/4.png'],
+  category: 'web',
+  technologies: [{ name: 'React', category: 'frontend' }, { name: 'Node.js', category: 'backend' }, { name: 'Express', category: 'backend' }, { name: 'MongoDB', category: 'database' }],
+  projectType: 'major',
+  difficulty: 'intermediate',
+  tags: ['mern'],
+  features: [{ title: 'Core Workflow', description: 'Use the main project workflow and complete the core problem-solving action.' }, { title: 'Search & Filtering', description: 'Find relevant records quickly using search and filters.' }, { title: 'Status Tracking', description: 'Track progress, pending work, completion, or approval states.' }, { title: 'History & Records', description: 'Maintain previous activities and results.' }, { title: 'Responsive Interface', description: 'Provide a mobile-friendly interface for common workflows.' }],
+  modules: [{ name: 'User Module', description: 'Authentication and profile management', features: ['Registration', 'Login', 'Profile Management'] }, { name: 'Core Module', description: 'Main PeerDesk workflow', features: ['Create', 'View', 'Edit', 'Status Tracking'] }, { name: 'History Module', description: 'Previous records and activity', features: ['History', 'Search', 'Details'] }],
+  problemStatement: 'The project addresses a specific real-world problem: peer-to-peer academic support platform for requesting help, matching helpers, scheduling sessions, and rating experiences.',
+  existingSolutions: [],
+  workflow: 'User signup → Create or select a record → Perform the main action → Review/update status → Track history',
+  architecture: { description: 'MERN stack with REST APIs.' },
+  databaseTables: [
+    { name: 'users', description: 'User accounts and roles', fields: ['id', 'name', 'email', 'password', 'role'] },
+    { name: 'primary_records', description: 'Main project records', fields: ['id', 'userId', 'title', 'description', 'status', 'createdAt'] },
+    { name: 'history', description: 'Activity and status history', fields: ['id', 'recordId', 'action', 'notes', 'createdAt'] }
+  ],
+  documentation: [{ title: 'Setup Guide', type: 'md', url: '#' }, { title: 'API Documentation', type: 'md', url: '#' }],
+  requirements: { software: ['Node.js 18+', 'npm', 'Git'], database: ['MongoDB'], ide: ['VS Code'], ram: '8GB', os: ['Windows', 'macOS', 'Linux'] },
+  learningOutcomes: [
+    { title: 'MERN Stack', description: 'Full-stack JavaScript application development' },
+    { title: 'Backend Workflows', description: 'REST APIs, authentication, validation, and business rules' },
+    { title: 'Database Design', description: 'Application data modeling and CRUD workflows' }
+  ],
+  futureEnhancements: ['Notifications', 'Advanced search and filtering', 'Mobile PWA', 'Analytics and reporting'],
+  faqs: [
+    { question: 'Is this suitable as a college major project?', answer: 'Yes. It has a clear real-world problem, multiple modules, database workflows, and a practical implementation scope.' },
+    { question: 'Can this be built without paid APIs?', answer: 'Yes. The core application can be implemented with open-source MERN technologies and self-built functionality.' }
+  ],
+  relatedProjects: [],
+  lastUpdated: '2026-08-20',
+  suitorFor: ['BTech', 'MCA', 'BCA'],
+},
+{
+  id: '47',
+  slug: 'quietstudy',
+  title: 'QuietStudy – Library/Study Space Availability Platform',
+  shortDescription: 'Reservation platform for library seats, study rooms, discussion rooms, and computer desks.',
+  fullDescription: 'QuietStudy helps students find and reserve study spaces. It displays capacities, facilities, time slots, and current availability. Students reserve seats or rooms and can check in using a reservation or QR code.',
+  thumbnail: '/quietstudy/thumbnail.png',
+  gallery: ['/quietstudy/1.png', '/quietstudy/2.png', '/quietstudy/3.png', '/quietstudy/4.png'],
+  category: 'web',
+  technologies: [{ name: 'React', category: 'frontend' }, { name: 'Node.js', category: 'backend' }, { name: 'Express', category: 'backend' }, { name: 'MongoDB', category: 'database' }],
+  projectType: 'major',
+  difficulty: 'intermediate',
+  tags: ['mern'],
+  features: [{ title: 'Core Workflow', description: 'Use the main project workflow and complete the core problem-solving action.' }, { title: 'Search & Filtering', description: 'Find relevant records quickly using search and filters.' }, { title: 'Status Tracking', description: 'Track progress, pending work, completion, or approval states.' }, { title: 'History & Records', description: 'Maintain previous activities and results.' }, { title: 'Responsive Interface', description: 'Provide a mobile-friendly interface for common workflows.' }],
+  modules: [{ name: 'User Module', description: 'Authentication and profile management', features: ['Registration', 'Login', 'Profile Management'] }, { name: 'Core Module', description: 'Main QuietStudy workflow', features: ['Create', 'View', 'Edit', 'Status Tracking'] }, { name: 'History Module', description: 'Previous records and activity', features: ['History', 'Search', 'Details'] }],
+  problemStatement: 'The project addresses a specific real-world problem: reservation platform for library seats, study rooms, discussion rooms, and computer desks.',
+  existingSolutions: [],
+  workflow: 'User signup → Create or select a record → Perform the main action → Review/update status → Track history',
+  architecture: { description: 'MERN stack with REST APIs.' },
+  databaseTables: [
+    { name: 'users', description: 'User accounts and roles', fields: ['id', 'name', 'email', 'password', 'role'] },
+    { name: 'primary_records', description: 'Main project records', fields: ['id', 'userId', 'title', 'description', 'status', 'createdAt'] },
+    { name: 'history', description: 'Activity and status history', fields: ['id', 'recordId', 'action', 'notes', 'createdAt'] }
+  ],
+  documentation: [{ title: 'Setup Guide', type: 'md', url: '#' }, { title: 'API Documentation', type: 'md', url: '#' }],
+  requirements: { software: ['Node.js 18+', 'npm', 'Git'], database: ['MongoDB'], ide: ['VS Code'], ram: '8GB', os: ['Windows', 'macOS', 'Linux'] },
+  learningOutcomes: [
+    { title: 'MERN Stack', description: 'Full-stack JavaScript application development' },
+    { title: 'Backend Workflows', description: 'REST APIs, authentication, validation, and business rules' },
+    { title: 'Database Design', description: 'Application data modeling and CRUD workflows' }
+  ],
+  futureEnhancements: ['Notifications', 'Advanced search and filtering', 'Mobile PWA', 'Analytics and reporting'],
+  faqs: [
+    { question: 'Is this suitable as a college major project?', answer: 'Yes. It has a clear real-world problem, multiple modules, database workflows, and a practical implementation scope.' },
+    { question: 'Can this be built without paid APIs?', answer: 'Yes. The core application can be implemented with open-source MERN technologies and self-built functionality.' }
+  ],
+  relatedProjects: [],
+  lastUpdated: '2026-08-20',
+  suitorFor: ['BTech', 'MCA', 'BCA'],
+}
 ];
