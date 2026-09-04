@@ -2518,5 +2518,86 @@ export const projects: Project[] = [
   relatedProjects: [],
   lastUpdated: '2026-08-20',
   suitorFor: ['BTech', 'MCA', 'BCA'],
+},
+{
+  id: '48',
+  slug: 'skillproof',
+  title: 'SkillProof – Student Skill Evidence & Portfolio Verification Platform',
+  shortDescription: 'Platform for collecting project, certificate, internship, and mentor evidence for individual skills and requesting verification.',
+  fullDescription: 'SkillProof lets students demonstrate skills using evidence rather than self-declared profiles. Students attach projects, GitHub links, certificates, internship work, or mentor evaluations for faculty or mentor verification.',
+  thumbnail: '/skillproof/thumbnail.png',
+  gallery: ['/skillproof/1.png', '/skillproof/2.png', '/skillproof/3.png', '/skillproof/4.png'],
+  category: 'web',
+  technologies: [{ name: 'React', category: 'frontend' }, { name: 'Node.js', category: 'backend' }, { name: 'Express', category: 'backend' }, { name: 'MongoDB', category: 'database' }],
+  projectType: 'major',
+  difficulty: 'intermediate',
+  tags: ['mern'],
+  features: [{ title: 'Core Workflow', description: 'Use the main project workflow and complete the core problem-solving action.' }, { title: 'Search & Filtering', description: 'Find relevant records quickly using search and filters.' }, { title: 'Status Tracking', description: 'Track progress, pending work, completion, or approval states.' }, { title: 'History & Records', description: 'Maintain previous activities and results.' }, { title: 'Responsive Interface', description: 'Provide a mobile-friendly interface for common workflows.' }],
+  modules: [{ name: 'User Module', description: 'Authentication and profile management', features: ['Registration', 'Login', 'Profile Management'] }, { name: 'Core Module', description: 'Main SkillProof workflow', features: ['Create', 'View', 'Edit', 'Status Tracking'] }, { name: 'History Module', description: 'Previous records and activity', features: ['History', 'Search', 'Details'] }],
+  problemStatement: 'The project addresses a specific real-world problem: platform for collecting project, certificate, internship, and mentor evidence for individual skills and requesting verification.',
+  existingSolutions: [],
+  workflow: 'User signup → Create or select a record → Perform the main action → Review/update status → Track history',
+  architecture: { description: 'MERN stack with REST APIs.' },
+  databaseTables: [
+    { name: 'users', description: 'User accounts and roles', fields: ['id', 'name', 'email', 'password', 'role'] },
+    { name: 'primary_records', description: 'Main project records', fields: ['id', 'userId', 'title', 'description', 'status', 'createdAt'] },
+    { name: 'history', description: 'Activity and status history', fields: ['id', 'recordId', 'action', 'notes', 'createdAt'] }
+  ],
+  documentation: [{ title: 'Setup Guide', type: 'md', url: '#' }, { title: 'API Documentation', type: 'md', url: '#' }],
+  requirements: { software: ['Node.js 18+', 'npm', 'Git'], database: ['MongoDB'], ide: ['VS Code'], ram: '8GB', os: ['Windows', 'macOS', 'Linux'] },
+  learningOutcomes: [
+    { title: 'MERN Stack', description: 'Full-stack JavaScript application development' },
+    { title: 'Backend Workflows', description: 'REST APIs, authentication, validation, and business rules' },
+    { title: 'Database Design', description: 'Application data modeling and CRUD workflows' }
+  ],
+  futureEnhancements: ['Notifications', 'Advanced search and filtering', 'Mobile PWA', 'Analytics and reporting'],
+  faqs: [
+    { question: 'Is this suitable as a college major project?', answer: 'Yes. It has a clear real-world problem, multiple modules, database workflows, and a practical implementation scope.' },
+    { question: 'Can this be built without paid APIs?', answer: 'Yes. The core application can be implemented with open-source MERN technologies and self-built functionality.' }
+  ],
+  relatedProjects: [],
+  lastUpdated: '2026-08-20',
+  suitorFor: ['BTech', 'MCA', 'BCA'],
+},
+{
+  id: '49',
+  slug: 'lablog',
+  title: 'LabLog – Laboratory Experiment & Observation Record Platform',
+  shortDescription: 'Digital laboratory record system for experiments, observations, results, viva preparation, and faculty review.',
+  fullDescription: 'LabLog digitizes student laboratory records. Students create experiment entries containing objectives, requirements, procedures, observations, results, and notes. Faculty review submissions and can add comments and marks. AI can generate viva questions.',
+  thumbnail: '/lablog/thumbnail.png',
+  gallery: ['/lablog/1.png', '/lablog/2.png', '/lablog/3.png', '/lablog/4.png'],
+  category: 'ai-ml',
+  technologies: [{ name: 'React', category: 'frontend' }, { name: 'Node.js', category: 'backend' }, { name: 'Express', category: 'backend' }, { name: 'MongoDB', category: 'database' }, { name: 'Gemini API', category: 'tool' }],
+  projectType: 'major',
+  difficulty: 'intermediate',
+  tags: ['mern', 'ai'],
+  features: [{ title: 'AI-Powered Analysis', description: 'Use Gemini to analyze, extract, classify, summarize, match, or generate structured information.' }, { title: 'Search & Filtering', description: 'Find relevant records quickly using search and filters.' }, { title: 'Status Tracking', description: 'Track progress, pending work, completion, or approval states.' }, { title: 'History & Records', description: 'Maintain previous activities and results.' }, { title: 'Responsive Interface', description: 'Provide a mobile-friendly interface for common workflows.' }],
+  modules: [{ name: 'User Module', description: 'Authentication and profile management', features: ['Registration', 'Login', 'Profile Management'] }, { name: 'Core Module', description: 'Main LabLog workflow', features: ['Create', 'View', 'Edit', 'Status Tracking'] }, { name: 'AI Module', description: 'Gemini-powered AI functionality', features: ['Analyze', 'Generate Structured Output', 'Review Results', 'Save Results'] }, { name: 'History Module', description: 'Previous records and activity', features: ['History', 'Search', 'Details'] }],
+  problemStatement: 'The project addresses a specific real-world problem: digital laboratory record system for experiments, observations, results, viva preparation, and faculty review.',
+  existingSolutions: [],
+  workflow: 'User signup → Create or select a record → Perform the main action → Review/update status → Track history',
+  architecture: { description: 'MERN stack with REST APIs and Gemini API integration for AI features.' },
+  databaseTables: [
+    { name: 'users', description: 'User accounts and roles', fields: ['id', 'name', 'email', 'password', 'role'] },
+    { name: 'primary_records', description: 'Main project records', fields: ['id', 'userId', 'title', 'description', 'status', 'createdAt'] },
+    { name: 'history', description: 'Activity and status history', fields: ['id', 'recordId', 'action', 'notes', 'createdAt'] }
+  ],
+  documentation: [{ title: 'Setup Guide', type: 'md', url: '#' }, { title: 'API Documentation', type: 'md', url: '#' }],
+  requirements: { software: ['Node.js 18+', 'npm', 'Git'], database: ['MongoDB'], ide: ['VS Code'], ram: '8GB', os: ['Windows', 'macOS', 'Linux'] },
+  learningOutcomes: [
+    { title: 'MERN Stack', description: 'Full-stack JavaScript application development' },
+    { title: 'AI Integration', description: 'Practical Gemini API integration' },
+    { title: 'Database Design', description: 'Application data modeling and CRUD workflows' }
+  ],
+  futureEnhancements: ['Notifications', 'Advanced search and filtering', 'Mobile PWA', 'Analytics and reporting'],
+  faqs: [
+    { question: 'Is this suitable as a college major project?', answer: 'Yes. It has a clear real-world problem, multiple modules, database workflows, and a practical implementation scope.' },
+    { question: 'Can the AI features use a free API?', answer: 'Yes. Gemini can be used for the AI layer subject to the current free-tier quota and model limits.' }
+  ],
+  relatedProjects: [],
+  lastUpdated: '2026-08-20',
+  suitorFor: ['BTech', 'MCA', 'BCA'],
 }
+
 ];
