@@ -2718,5 +2718,45 @@ export const projects: Project[] = [
     relatedProjects: [],
     lastUpdated: '2026-08-20',
     suitorFor: ['BTech', 'MCA', 'BCA'],
-  }
+  },
+  {
+  id: '53',
+  slug: 'civicbrief-ai-mern',
+  title: 'CivicBrief AI – Convert Public Notices into Actionable Tasks',
+  shortDescription: 'AI platform that converts long public notices into audience, eligibility, deadlines, documents, and required actions.',
+  fullDescription: 'CivicBrief AI helps users understand public notices by converting lengthy announcements into structured actionable information. AI identifies who is affected, required actions, deadlines, eligibility, documents, and application locations.',
+  thumbnail: '/civicbrief/thumbnail.png',
+  gallery: ['/civicbrief/1.png', '/civicbrief/2.png', '/civicbrief/3.png', '/civicbrief/4.png'],
+  category: 'ai-ml',
+  technologies: [{ name: 'React', category: 'frontend' }, { name: 'Node.js', category: 'backend' }, { name: 'Express', category: 'backend' }, { name: 'MongoDB', category: 'database' }, { name: 'Gemini API', category: 'tool' }],
+  projectType: 'major',
+  difficulty: 'intermediate',
+  tags: ['mern', 'ai'],
+  features: [{ title: 'AI-Powered Analysis', description: 'Use Gemini to analyze, extract, classify, summarize, match, or generate structured information.' }, { title: 'Search & Filtering', description: 'Find relevant records quickly using search and filters.' }, { title: 'Status Tracking', description: 'Track progress, pending work, completion, or approval states.' }, { title: 'History & Records', description: 'Maintain previous activities and results.' }, { title: 'Responsive Interface', description: 'Provide a mobile-friendly interface for common workflows.' }],
+  modules: [{ name: 'User Module', description: 'Authentication and profile management', features: ['Registration', 'Login', 'Profile Management'] }, { name: 'Core Module', description: 'Main CivicBrief AI workflow', features: ['Create', 'View', 'Edit', 'Status Tracking'] }, { name: 'AI Module', description: 'Gemini-powered AI functionality', features: ['Analyze', 'Generate Structured Output', 'Review Results', 'Save Results'] }, { name: 'History Module', description: 'Previous records and activity', features: ['History', 'Search', 'Details'] }],
+  problemStatement: 'The project addresses a specific real-world problem: ai platform that converts long public notices into audience, eligibility, deadlines, documents, and required actions.',
+  existingSolutions: [],
+  workflow: 'User signup → Create or select a record → Perform the main action → Review/update status → Track history',
+  architecture: { description: 'MERN stack with REST APIs and Gemini API integration for AI features.' },
+  databaseTables: [
+    { name: 'users', description: 'User accounts and roles', fields: ['id', 'name', 'email', 'password', 'role'] },
+    { name: 'primary_records', description: 'Main project records', fields: ['id', 'userId', 'title', 'description', 'status', 'createdAt'] },
+    { name: 'history', description: 'Activity and status history', fields: ['id', 'recordId', 'action', 'notes', 'createdAt'] }
+  ],
+  documentation: [{ title: 'Setup Guide', type: 'md', url: '#' }, { title: 'API Documentation', type: 'md', url: '#' }],
+  requirements: { software: ['Node.js 18+', 'npm', 'Git'], database: ['MongoDB'], ide: ['VS Code'], ram: '8GB', os: ['Windows', 'macOS', 'Linux'] },
+  learningOutcomes: [
+    { title: 'MERN Stack', description: 'Full-stack JavaScript application development' },
+    { title: 'AI Integration', description: 'Practical Gemini API integration' },
+    { title: 'Database Design', description: 'Application data modeling and CRUD workflows' }
+  ],
+  futureEnhancements: ['Notifications', 'Advanced search and filtering', 'Mobile PWA', 'Analytics and reporting'],
+  faqs: [
+    { question: 'Is this suitable as a college major project?', answer: 'Yes. It has a clear real-world problem, multiple modules, database workflows, and a practical implementation scope.' },
+    { question: 'Can the AI features use a free API?', answer: 'Yes. Gemini can be used for the AI layer subject to the current free-tier quota and model limits.' }
+  ],
+  relatedProjects: [],
+  lastUpdated: '2026-08-20',
+  suitorFor: ['BTech', 'MCA', 'BCA'],
+}
 ];
